@@ -237,6 +237,7 @@ select sum(`Purchase Amount (USD)`) as Total_Revenue
  group by Category
  order by total_revenue desc;
 ```
+<img width="359" height="145" alt="image" src="https://github.com/user-attachments/assets/22c3b528-be91-4f19-b53e-bd1236cb2fb4" />
  
 
 ### KEY INSIGHTS
