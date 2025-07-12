@@ -267,10 +267,13 @@ select sum(`Purchase Amount (USD)`) as Total_Revenue
 
 ### Project Files
 •	Sales_data_analysis.sql- All SQL queries used
+
 •	Sales_data.xlsx- Raw data
+
 •	README.md-project summary and insights
 
 ### Tools Used
 •	MySQL
+
 •	Excel (for raw data)
 
