@@ -109,34 +109,40 @@ select *
 FROM `sql file`
 where category = 'clothing';
 ```
+<img width="363" height="661" alt="image" src="https://github.com/user-attachments/assets/26895810-e869-41cd-82df-8f3181951a7a" />
  
 ```sql
 select *
 FROM `sql file`
 where category = 'footwear';
 ```
+<img width="352" height="666" alt="image" src="https://github.com/user-attachments/assets/9f1ddc13-7337-45f6-b397-4d0911667f17" />
  
 ```sql
 SELECT *
 FROM `sql file`
 WHERE category = 'Accessories';
 ```
- 
+ <img width="380" height="636" alt="image" src="https://github.com/user-attachments/assets/f8953aab-2883-492b-8790-5c66079d74b1" />
+
 ```sql
 select *
 FROM `sql file`
 where category = 'outerwear';
 ```
+<img width="363" height="666" alt="image" src="https://github.com/user-attachments/assets/07ae544e-2864-4d03-9e76-084818f57a25" />
  
 7.	**write a query that identifies distinct categories.**
 ```sql
 SELECT DISTINCT(Category) FROM `sql file`;
 ```
+<img width="158" height="150" alt="image" src="https://github.com/user-attachments/assets/fecca4ce-14f4-42c7-8fd5-2462b8ad52d1" />
  
 8.	**Write a query to check distinct categories.**
 ```sql
 select COUNT(DISTINCT category) from `sql file`;
 ```
+<img width="278" height="95" alt="image" src="https://github.com/user-attachments/assets/53c89c12-93de-4b61-ba34-7a6afc5e21ea" />
  
 9.	**write a query to find out how much each category brought in in terms of sales.**
 ```sql
@@ -145,23 +151,27 @@ sum(`Purchase Amount (USD)`) as Total_sales
 from `sql file`
 group by Category;
 ```
+<img width="233" height="142" alt="image" src="https://github.com/user-attachments/assets/5b042a4b-856f-4249-b58f-c4b912d47d5b" />
  
 10.	**write a query to identify distinct items.**
 ``sql
 SELECT DISTINCT(`Item Purchased`) from `sql file`; 
 ```
+<img width="145" height="688" alt="image" src="https://github.com/user-attachments/assets/fa76a486-c5af-428f-b6c4-7e33e7ab4b11" />
  
 11.	Write a query to find out count of distinct items purchased.**
 ```sql
 select COUNT(DISTINCT`Item Purchased`) from `sql file`;
 ```
+<img width="238" height="109" alt="image" src="https://github.com/user-attachments/assets/890991e6-1439-462e-aa03-100fe84f205a" />
  
 12.	**write a query to find out the unique customers that  visited the store.**
 ```sql
 SELECT COUNT(DISTINCT `Customer ID`) as Unique_customer 
 FROM `sql file`;
 ```
- 
+ <img width="159" height="66" alt="image" src="https://github.com/user-attachments/assets/c84b94f2-2f5c-4171-9a05-ad70d0c7a58d" />
+
 13.	**write a query to find duplicates on customer Id, item purchased, category and purchase amount.**
 ```sql
 SELECT `Customer ID`
@@ -182,18 +192,21 @@ from `sql file`
 group by `Item Purchased`
 order by itemsales desc;
 ```
+<img width="241" height="688" alt="image" src="https://github.com/user-attachments/assets/a426938e-d90d-4db9-8325-9480971e0cc6" />
  
 15.	**write a query to for the total sales.**
 ```sql
 select sum(`Purchase Amount (USD)`) as Total_Revenue
  from `sql file`;
  ```
- 
+ <img width="127" height="63" alt="image" src="https://github.com/user-attachments/assets/67834e35-e944-4bb4-b8f4-fddfd82fd2fb" />
+
 16.	**write a query for  average sales.**
 ```sql
  select AVG(`Purchase Amount (USD)`) as Average_Sales
  from `sql file`;
  ```
+<img width="141" height="80" alt="image" src="https://github.com/user-attachments/assets/b4d2837a-3d79-4461-99f4-1269a1598da9" />
  
 17.	**write a query to fetch  top 2 categories by count.**
 ```sql
@@ -204,6 +217,7 @@ select sum(`Purchase Amount (USD)`) as Total_Revenue
  order by count(*) desc
  LIMIT 2;
  ```
+<img width="203" height="92" alt="image" src="https://github.com/user-attachments/assets/903a7aa3-a7e4-47c7-bcac-53e3cd27e8e2" />
  
 18.	**write a query to fetch top 2 categories by revenue.**
 ```sql
@@ -214,7 +228,8 @@ select sum(`Purchase Amount (USD)`) as Total_Revenue
  order by total_revenue desc
  limit 2;
  ```
- 
+ <img width="253" height="100" alt="image" src="https://github.com/user-attachments/assets/b37cc0e7-f7c4-4707-ae92-5e6cd89858cb" />
+
 19.	**write a query to fetch top 5 items by revenue.**
 ```sql
  select `Item Purchased`,
@@ -224,6 +239,7 @@ select sum(`Purchase Amount (USD)`) as Total_Revenue
  order by total_revenue desc
  limit 5;
  ```
+<img width="267" height="191" alt="image" src="https://github.com/user-attachments/assets/00c69e3f-a65a-46c0-b8fa-0ce5cb93105f" />
  
 20.	**write a query to fetch top 5 customers by spend.**
 ```sql
@@ -233,6 +249,7 @@ select sum(`Purchase Amount (USD)`) as Total_Revenue
  order by total_spent desc
  limit 5;
  ```
+<img width="222" height="184" alt="image" src="https://github.com/user-attachments/assets/afbdfb4f-7a60-47dc-9964-0fc3cb4543f2" />
  
 21.	**Write a query to fetch revenue and total sales by product category.**
 ```sql
