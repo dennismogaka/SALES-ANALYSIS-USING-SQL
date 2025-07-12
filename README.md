@@ -58,12 +58,14 @@ The following SQL queries were developed to answer specific business Questions:
 ```sql
 SELECT* FROM`sql file` ;
 ```
+<img width="509" height="691" alt="image" src="https://github.com/user-attachments/assets/d3939d0f-c74a-4a01-ba0a-e39cee6c9966" />
  
 2.	**write a query to find out the number of transactions that were made.**
 ```sql
 select COUNT(*) AS Total_Transactions
 FROM `sql file`;
 ```
+<img width="208" height="61" alt="image" src="https://github.com/user-attachments/assets/7bd04951-73eb-4bcb-aa83-61fe32c120b2" />
  
 
 3.	**write a query to check for  missing values in the table.**
@@ -75,6 +77,7 @@ sum(case when Category is null then 1 else 0 end) as missing_category,
 sum(case when `Purchase Amount (USD)` is null then 1 else 0 end) as missing_purchase_amount
 from `sql file`;
 ```
+<img width="806" height="77" alt="image" src="https://github.com/user-attachments/assets/bd17d147-ee32-4ce3-8e9a-8fb5c8a8e420" />
  
 4.	**write a query to check for duplicates in the sales data.**
 ```sql
@@ -91,12 +94,14 @@ else 'Unique'
 end as Record_Status
 from `sql file`;
 ```
+<img width="717" height="691" alt="image" src="https://github.com/user-attachments/assets/fa880aa4-3790-45ba-9cab-f18e4a120975" />
  
 5.	**write a query to check if purchase amount is in numeric format.**
 ```sql
 update `sql file`
 set `Purchase Amount (USD)` = cast(`Purchase Amount (USD)` as decimal(10,0));
 ```
+
 6.	**write  queries  to identify items in each category that was sold.**
 
 ```sql
